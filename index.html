@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Cidadania Digital: Deepfakes e Desinformação</title>
+    <title>Portal Cidadania Digital: IA e Deepfakes</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,40 +14,49 @@
     </header>
 
     <main>
-        <!-- Seção 1: Introdução Conceitual -->
-        <section id="introducao" class="card-section">
-            <h2>O Impacto das Deepfakes</h2>
-            <p>As deepfakes utilizam Inteligência Artificial para clonar vozes e rostos de forma hiper-realista. Na era da desinformação automatizada, aprender a identificar mídias manipuladas é um dever do cidadão digital para proteger a verdade e a democracia.</p>
+        <!-- Conteúdo Teórico Obrigatório -->
+        <section id="contexto" class="card-section">
+            <h2>Deepfakes e a Desinformação Automatizada</h2>
+            <p>A Inteligência Artificial transformou a criação de conteúdos. Hoje, algoritmos avançados conseguem clonar vozes e simular rostos de forma hiper-realista. Esse fenômeno gera as <strong>deepfakes</strong>, mídias manipuladas que alimentam campanhas de desinformação automatizada em massa.</p>
+            <p>O combate a essa ameaça exige uma postura ativa e senso crítico. Como cidadãos digitais, precisamos aprender a identificar anomalias em vídeos e áudios, desconfiar de conteúdos alarmistas e checar canais oficiais antes de compartilhar qualquer informação.</p>
         </section>
 
-        <!-- Seção 2: Quiz Interativo (Desafio Técnico JS) -->
-        <section id="quiz" class="card-section">
-            <h2>Quiz Anti-Desinformação</h2>
-            <p>Teste seus conhecimentos! Você sabe identificar um conteúdo manipulado?</p>
+        <!-- Jogo de Conscientização Interativo -->
+        <section id="jogo-container" class="card-section">
+            <h2>Jogo da Verdade Digital</h2>
+            <p>Analise o caso abaixo e decida se a situação representa um conteúdo <strong>Real</strong> ou uma <strong>Deepfake</strong> manipulada por IA!</p>
             
-            <form id="form-quiz">
-                <div class="pergunta">
-                    <p>1. Um vídeo com movimentos labiais desalinhados e piscadas não naturais geralmente indica uma deepfake?</p>
-                    <label>
-                        <input type="radio" name="p1" value="correto" required> Sim, são falhas comuns de renderização de IA.
-                    </label>
-                    <label>
-                        <input type="radio" name="p1" value="errado"> Não, a IA atual não comete esses erros visuais.
-                    </label>
+            <!-- Painel do Jogo de Fluxo Dinâmico -->
+            <div id="painel-jogo">
+                <div class="placar">Pontuação: <span id="pontos">0</span> / 3</div>
+                
+                <div id="cenario-box">
+                    <p id="texto-cenario">Carregando desafio...</p>
                 </div>
 
-                <button type="submit" class="btn-enviar">Verificar Respostas</button>
-            </form>
-            
-            <!-- Div oculta manipulada dinamicamente via JS -->
-            <div id="resultado-quiz" class="hidden">
-                <p id="texto-resultado"></p>
+                <form id="form-jogo">
+                    <div class="opcoes-container">
+                        <label class="opcao-label">
+                            <input type="radio" name="escolha" value="real" required> 🟢 Parece Real
+                        </label>
+                        <label class="opcao-label">
+                            <input type="radio" name="escolha" value="deepfake"> 🔴 É uma Deepfake
+                        </label>
+                    </div>
+                    <button type="submit" id="btn-responder" class="btn-enviar">Confirmar Escolha</button>
+                </form>
+            </div>
+
+            <!-- Tela de Feedback e Resultado Final -->
+            <div id="feedback-jogo" class="hidden">
+                <p id="texto-feedback"></p>
+                <button id="btn-proximo" class="btn-toggle">Avançar</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Projeto Escolar de Educação Digital e IA. Conteúdo 100% Autoral.</p>
+        <p>&copy; 2026 - Portal de Conscientização Comunitária. Conteúdo 100% Autoral e Educativo.</p>
     </footer>
 
     <script src="js/script.js"></script>
