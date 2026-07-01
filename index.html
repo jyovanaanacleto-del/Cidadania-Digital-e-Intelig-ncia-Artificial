@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cidadania Digital: Deepfakes e Desinformação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Cidadania Digital</h1>
+        <button id="btn-acessibilidade" class="btn-toggle">Modo Escuro</button>
+    </header>
+
+    <main>
+        <!-- Seção 1: Introdução Conceitual -->
+        <section id="introducao" class="card-section">
+            <h2>O Impacto das Deepfakes</h2>
+            <p>As deepfakes utilizam Inteligência Artificial para clonar vozes e rostos de forma hiper-realista. Na era da desinformação automatizada, aprender a identificar mídias manipuladas é um dever do cidadão digital para proteger a verdade e a democracia.</p>
+        </section>
+
+        <!-- Seção 2: Quiz Interativo (Desafio Técnico JS) -->
+        <section id="quiz" class="card-section">
+            <h2>Quiz Anti-Desinformação</h2>
+            <p>Teste seus conhecimentos! Você sabe identificar um conteúdo manipulado?</p>
+            
+            <form id="form-quiz">
+                <div class="pergunta">
+                    <p>1. Um vídeo com movimentos labiais desalinhados e piscadas não naturais geralmente indica uma deepfake?</p>
+                    <label>
+                        <input type="radio" name="p1" value="correto" required> Sim, são falhas comuns de renderização de IA.
+                    </label>
+                    <label>
+                        <input type="radio" name="p1" value="errado"> Não, a IA atual não comete esses erros visuais.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Verificar Respostas</button>
+            </form>
+            
+            <!-- Div oculta manipulada dinamicamente via JS -->
+            <div id="resultado-quiz" class="hidden">
+                <p id="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Escolar de Educação Digital e IA. Conteúdo 100% Autoral.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
