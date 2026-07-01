@@ -61,7 +61,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Elementos do Jogo */
 .placar {
     font-weight: bold;
     font-size: 1.1rem;
@@ -88,12 +87,18 @@ p {
 .opcao-label {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     padding: 14px;
     border: 1px solid var(--borda);
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.2s, transform 0.1s;
+}
+
+.opcao-label input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
 }
 
 .opcao-label:hover {
@@ -144,7 +149,6 @@ footer {
     opacity: 0.7;
 }
 
-/* 📱 Responsividade - Ajuste para telas mobile */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -152,11 +156,9 @@ footer {
         text-align: center;
         padding: 20px;
     }
-    
     main {
         margin: 20px auto;
     }
-    
     .card-section {
         padding: 20px;
     }
