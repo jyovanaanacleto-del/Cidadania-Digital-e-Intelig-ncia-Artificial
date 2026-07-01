@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Cidadania Digital: IA e Deepfakes</title>
-    <link rel="stylesheet" href="./css/style.css">
-
+    <!-- Link corrigido para a raiz -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -27,7 +27,6 @@
             <h2>Jogo da Verdade Digital</h2>
             <p>Analise o caso abaixo e decida se a situação representa um conteúdo <strong>Real</strong> ou uma <strong>Deepfake</strong> manipulada por IA!</p>
             
-            <!-- Painel do Jogo de Fluxo Dinâmico -->
             <div id="painel-jogo">
                 <div class="placar">Pontuação: <span id="pontos">0</span> / 3</div>
                 
@@ -38,10 +37,10 @@
                 <form id="form-jogo">
                     <div class="opcoes-container">
                         <label class="opcao-label">
-                            <input type="radio" name="escolha" value="real" required> 🟢 Parece Real
+                            <input type="radio" name="escolha" value="real" required> <span>🟢 Parece Real</span>
                         </label>
                         <label class="opcao-label">
-                            <input type="radio" name="escolha" value="deepfake"> 🔴 É uma Deepfake
+                            <input type="radio" name="escolha" value="deepfake"> <span>🔴 É uma Deepfake</span>
                         </label>
                     </div>
                     <button type="submit" id="btn-responder" class="btn-enviar">Confirmar Escolha</button>
@@ -60,7 +59,7 @@
         <p>&copy; 2026 - Portal de Conscientização Comunitária. Conteúdo 100% Autoral e Educativo.</p>
     </footer>
 
-    <script src="./js/script.js"></script>
-
+    <!-- Script corrigido para a raiz -->
+    <script src="script.js"></script>
 </body>
 </html>
